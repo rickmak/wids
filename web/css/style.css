@@ -99,7 +99,11 @@ div#description p strong {
   color: #FF6E0B;
 }
 
-div#description a {
+div#description a,
+div#description a:hover,
+div#description a:visited,
+div#description a:active
+{
   color: #DDDDDD;
 }
 
@@ -173,8 +177,13 @@ nav ul li {
   margin-right: 20px;
 }
 
-nav ul li a{
+nav ul li a,
+nav ul li a:hover,
+nav ul li a:visited,
+nav ul li a:active
+{
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 nav ul li.selected {
@@ -198,11 +207,19 @@ div#body p {
   margin-bottom: 30px;
 }
 
-div#body p strong a {
+div#body p strong a,
+div#body p strong a:hover,
+div#body p strong a:visited,
+div#body p strong a:active
+{
   text-decoration: none;
 }
 
-div#body p a {
+div#body p a
+div#body p a:hover, 
+div#body p a:visited,
+div#body p a:active
+{
   color: #000000;
   text-decoration: underline;
 }

@@ -224,6 +224,16 @@ div#body p a:active
   text-decoration: underline;
 }
 
+div#body ul {
+  font-family: Georgia, Serif;
+  font-size: 16px;
+}
+
+div#body ul li {
+  line-height: 28px;
+  color: #000000;
+}
+
 div#body aside ul {
   margin: 0;
   list-style: none inside;

@@ -19,6 +19,14 @@
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=239362576138301";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <div id="topbar"></div>
   <header id="spread">
     <div id="logo-banner">
@@ -38,7 +46,11 @@
     <div id="event-msg" class="container">
       <div class="row">
         <div class="span10">
-          <div id="social-media-buttons"></div>
+          <div id="social-media-buttons">
+            <div class="fb-like" data-href="http://isoc.hk/wids/" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://isoc.hk/wids" data-text="Check-out World Internet Developer Summit (6-7 Mar)" data-hashtags="wids">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
           <p id="tagline">The <strong>first</strong> Cross-Platform Developer Summit in Hong Kong</p>
           <p id="date">6-7 March 2012</p>
           <p id="location">at Cyberport and Hong Kong Science Park</p>
@@ -224,7 +236,6 @@
 </body>
 </html>
 <!-- TODO:
-  * Social Media Sharing button
   * Back to top
   * Google Analytics?
   * Check cross browser support

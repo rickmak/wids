@@ -49,6 +49,20 @@ div#event-msg p {
   color: #FFFFFF;
 }
 
+div#event-msg div#social-media-buttons {
+  width: 210px;
+  height: 35px;
+  background-color: #FFF;
+  position: absolute;
+  margin-top: -245px;
+  margin-left: 730px;
+
+  border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -khtml-border-radius: 0px 0px 5px 5px;
+}
+
 div#event-msg p#tagline {
   font-size: 42px;
   line-height: 50px;

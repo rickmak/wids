@@ -7,11 +7,13 @@ $(function() {
   }
   $('div#main div' + h).show();
 
-  $('nav ul li a').click(function(evt){
-    hash = $(evt.target).attr('href');
+  click_handler = function(evt) {
+    hash = $(evt.currentTarget).attr('href');
     $("div#main div").hide();
     $("div#main div" + hash).show();
-  });
+  }
+  $('a.nav-btn').click(click_handler);
+  $('nav ul li a').click(click_handler);
 });
 
 

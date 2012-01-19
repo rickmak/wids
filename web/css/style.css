@@ -247,7 +247,7 @@ div#body p strong a:active
   text-decoration: none;
 }
 
-div#body p a
+div#body p a,
 div#body p a:hover, 
 div#body p a:visited,
 div#body p a:active

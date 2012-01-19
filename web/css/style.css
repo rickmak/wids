@@ -282,6 +282,10 @@ div#body aside h2 {
   margin-bottom: 50px;
 }
 
+div#prereg iframe{
+  min-height: 1000px;
+}
+
 /* Footer */
 footer {
   margin-top: 0;

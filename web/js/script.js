@@ -1,4 +1,4 @@
-navigate = function(hash) {
+nav = function(hash) {
   $("div#main div").hide();
   $("div#main div" + hash).show();
   $('nav ul li').removeClass('selected');
@@ -11,9 +11,9 @@ $(function() {
   } else {
     h = $("nav li.selected a").attr('href');
   }
-  navigate(h);
+  nav(h);
   click_handler = function(evt) {
-    navigate($(evt.currentTarget).attr('href'));
+    nav($(evt.currentTarget).attr('href'));
   }
   $('a.nav-btn').click(click_handler);
   $('nav ul li a').click(click_handler);

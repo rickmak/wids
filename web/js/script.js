@@ -1,6 +1,6 @@
 nav = function(hash) {
   $("div#main div").hide();
-  $("div#main div" + hash).show();
+  $("div#main div" + hash + "-content").show();
   $('nav ul li').removeClass('selected');
   $('nav ul li a[href$="'+ hash + '"]').parent().addClass('selected');
 }

@@ -244,6 +244,7 @@ div#body p strong a:hover,
 div#body p strong a:visited,
 div#body p strong a:active
 {
+  color: #FF6E0B;
   text-decoration: none;
 }
 
@@ -280,6 +281,12 @@ div#body aside h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   margin-bottom: 50px;
+}
+
+div#body img.keynote-pic {
+  width: 280px;
+}
+div#body img.keynote-org {
 }
 
 div#prereg iframe{

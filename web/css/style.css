@@ -293,6 +293,18 @@ div#prereg iframe{
   min-height: 1000px;
 }
 
+div#speakers-content h3 {
+  color: #FF6E0B;
+}
+
+div#speakers-content img.keynote-pic {
+  width: 150px;
+}
+
+div#speakers-content img.keynote-org {
+  width: 100px;
+}
+
 /* Footer */
 footer {
   margin-top: 0;

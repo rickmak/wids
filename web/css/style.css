@@ -305,6 +305,10 @@ div#speakers-content img.keynote-org {
   width: 100px;
 }
 
+div#speakers-content article {
+  margin-bottom: 40px;
+}
+
 img.more-info {
   cursor: pointer;
 }

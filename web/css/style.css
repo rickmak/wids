@@ -329,6 +329,16 @@ div.more-info {
   margin-top: -200px;
 }
 
+/* Support Organization */
+div#support_org {
+  margin-top: 30px;
+  width: 250px;
+}
+
+div#support_org img {
+  width: 50px;
+}
+
 /* Footer */
 footer {
   margin-top: 0;

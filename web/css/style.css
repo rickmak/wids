@@ -309,6 +309,18 @@ div#speakers-content article {
   margin-bottom: 40px;
 }
 
+div#body ul.prizes {
+  list-style: none;
+}
+
+div#body ul.prizes li {
+  display: block;
+  float: left;
+  font-size: 12px;
+  line-height: 12px;
+  width: 135px;
+}
+
 img.more-info {
   cursor: pointer;
 }
@@ -336,7 +348,8 @@ div#support_org {
 }
 
 div#support_org img {
-  width: 50px;
+  width: 75px;
+  margin-right: 5px;
 }
 
 /* Footer */

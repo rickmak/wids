@@ -352,6 +352,11 @@ div#support_org img {
   margin-right: 5px;
 }
 
+div#support_org img.spirit {
+  width: 250px;
+  margin-right: 0;
+}
+
 /* Footer */
 footer {
   margin-top: 0;

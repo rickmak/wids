@@ -288,6 +288,9 @@ div#body img.keynote-pic {
 }
 div#body img.keynote-org {
 }
+div#body img.keynote-img {
+  width: 150px;
+}
 
 div#prereg iframe{
   min-height: 1000px;

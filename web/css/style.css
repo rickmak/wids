@@ -84,8 +84,8 @@ div#event-msg p#location {
   font-size: 24px;
 }
 div#theme {
-  position: absolute;
-  margin-left: 760px;
+/*  position: absolute;
+  margin-left: 760px; */
 }
 div#theme img#theme_logo {
   width: 200px;

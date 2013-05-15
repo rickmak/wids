@@ -232,9 +232,11 @@ div#main-container {
   padding-top: 30px;
 }
 
-div#body p {
+div#body p,
+div#body h4 {
   font-family: Georgia, Serif;
   font-size: 16px;
+  font-weight: normal;
   line-height: 28px;
   margin-bottom: 30px;
 }
@@ -310,6 +312,15 @@ div#speakers-content img.keynote-org {
 
 div#speakers-content article {
   margin-bottom: 40px;
+}
+
+div#sponsors-content h3 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+div#sponsors-content h4 + ul {
+  margin-top: -20px;
 }
 
 div#body ul.prizes {

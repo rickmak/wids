@@ -241,6 +241,10 @@ div#body h4 {
   margin-bottom: 30px;
 }
 
+div#body h4 + ul {
+  margin-top: -20px;
+}
+
 div#body p strong a,
 div#body p strong a:hover,
 div#body p strong a:visited,
@@ -289,6 +293,7 @@ div#body img.keynote-pic {
   width: 200px;
 }
 div#body img.keynote-org {
+  width: 200px;
 }
 div#body img.keynote-img {
   width: 150px;
@@ -317,10 +322,6 @@ div#speakers-content article {
 div#sponsors-content h3 {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-}
-
-div#sponsors-content h4 + ul {
-  margin-top: -20px;
 }
 
 div#body ul.prizes {

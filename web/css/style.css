@@ -404,6 +404,11 @@ footer div p#copyright {
   font-size: 11px;
 }
 
+footer div p#copyright img {
+  border-width: 0;
+  vertical-align: text-bottom;
+}
+
 footer div p#reminder {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;

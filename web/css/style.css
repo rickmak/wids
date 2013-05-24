@@ -232,11 +232,17 @@ div#main-container {
   padding-top: 30px;
 }
 
-div#body p {
+div#body p,
+div#body h4 {
   font-family: Georgia, Serif;
   font-size: 16px;
+  font-weight: normal;
   line-height: 28px;
   margin-bottom: 30px;
+}
+
+div#body h4 + ul {
+  margin-top: -20px;
 }
 
 div#body p strong a,
@@ -287,6 +293,7 @@ div#body img.keynote-pic {
   width: 200px;
 }
 div#body img.keynote-org {
+  width: 200px;
 }
 div#body img.keynote-img {
   width: 150px;
@@ -310,6 +317,11 @@ div#speakers-content img.keynote-org {
 
 div#speakers-content article {
   margin-bottom: 40px;
+}
+
+div#sponsors-content h3 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 div#body ul.prizes {
@@ -390,6 +402,11 @@ footer img.logo {
 footer div p#copyright {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
+}
+
+footer div p#copyright img {
+  border-width: 0;
+  vertical-align: text-bottom;
 }
 
 footer div p#reminder {

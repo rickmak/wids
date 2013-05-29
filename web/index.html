@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 
   <meta property="og:title" content="World Internet Developer Summit 2013 @ 27-28 June 2013" />
@@ -34,29 +34,26 @@
     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=239362576138301";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
-  <div id="topbar"></div>
+
   <header id="mobile">
-    <img class="logo" src="img/wids_logo.png" alt="World Internet Developer Summit">
+    <img class="logo" src="img/wids-front-logo.png" alt="World Internet Developer Summit">
   </header>
-  <header id="spread">
-    <div id="logo-banner">
-      <div class="container">
-        <div class="row">
-          <div class="shadow"></div>
-          <div class="span8">
-            <h1 id="title">World Internet Developer Summit</h1>
-            <img class="logo" src="img/wids_logo.png" alt="World Internet Developer Summit Conference">
-          </div>
-          <div class="span3 offset1">
-            <a class="nav-btn" id="pre-register-btn" href="#prereg"><img src="img/preregister.png" alt="Pre-register"></a>
-          </div>
+
+   <div id="ad">
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+          <h5><strong>Pre-register now!</strong></h5>
+          <p>Get the most up-to-date info!</p>
+        </div>
+        <div class="span4">
+          <a class="nav-btn" href="#prereg" id="ad-pre-reg">Pre-register</a>
         </div>
       </div>
     </div>
-    <div id="event-msg" class="container">
-      <div class="row">
-        <div class="span9">
-          <div id="social-media-buttons">
+  </div>
+
+  <div id="social-media-buttons" class="hide-at-mobile">
             <div id="fb-btn">
               <div class="fb-like" data-href="http://isoc.hk/wids2013" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
             </div>
@@ -64,34 +61,46 @@
               <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://isoc.hk/wids2013" data-text="Check-out World Internet Developer Summit (27-28 June 2013)" data-hashtags="wids">Tweet</a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
+  </div>
+
+  <header id="spread">
+
+    <div id="logo-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <img class="logo" id="front-logo" src="img/wids-front-logo.png" alt="World Internet Developer Summit Conference">
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="event-msg" class="container">
+      <div class="row">
+        <div class="span12">
           <p id="tagline">The <strong>most signature</strong> Cross-Platform Developer Summit in Hong Kong</p>
           <p id="date">27-28 June 2013</p>
           <p id="location">at Cyberport and Hong Kong Science Park</p>
+          <p><a class="nav-btn" id="pre-register-btn" href="#prereg">Pre-register</a></p>
         </div>
-        <!--div id="theme" class="span3">
-          <img id="theme_logo" src="img/html5_logo.png" alt="HTML5 Logo">
-          <p>This year's main theme</p>
-        </div-->
       </div>
     </div>
-  </header>
-  <div id="description">
+
+    <div id="description">
     <div class="container">
       <div class="row">
-        <div class="span9">
+        <div class="span12">
           <p>Get ready for Hong Kong's signature <strong>World Internet Developer Summit</strong>! <br/>Hosted by <a href="http://www.isoc.hk">Internet Society Hong Kong</a>, <a href="http://www.cyberport.hk">Cyberport</a> and <a href="http://www.hkstp.org">Hong Kong Science and Technology Parks Corporation</a>, the action-packed two-day summit is the annual and signature <strong>cross-platform developer summit</strong> in the region.</p>
         </div>
       </div>
     </div>
   </div>
+
   <div id="host">
     <div class="container">
       <div class="row">
-        <div class="span1">
+        <div id="logos" class="span12">
           <p>Hosts</p>
-        </div>
-        <div id="logos" class="span11">
           <a href="http://www.isoc.hk/"><img src="img/isochk_logo.png" alt="Internet Society Hong Kong"></a>
           <a href="http://www.cyberport.hk/"><img src="img/cyberport_logo.png" alt="Cyberport"></a>
           <a href="http://www.hkstp.org/"><img src="img/hkstp_logo.png" alt="Hong Kong Science Parks"></a>
@@ -99,21 +108,14 @@
       </div>
     </div>
   </div>
-  <div id="ad">
-    <div class="container">
-      <div class="row">
-        <div class="span8">
-          <p><strong>Pre-register now!</strong></p>
-          <p>Get the most up-to-date info!</p>
-        </div>
-        <div class="span4">
-          <a class="nav-btn" href="#prereg"><img src="img/preregister-ad.png" alt="Pre-register"></a>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  </header>
+
+  
+ 
   <nav>
     <div class="container">
+      <div class="row" id="nav-row">
       <div class="span12">
         <ul>
           <li class="selected"><a href="#about" id="about">About</a></li>
@@ -125,12 +127,13 @@
         </ul>
       </div>
     </div>
+    </div>
   </nav>
   <div id="body">
-    <div class="container">
+    <div class="container white-bg">
       <div id="main-container" class="row">
-        <div id="main" class="span8">
-          <div id="about-content">
+        <div id="main" class="span9">
+          <div id="about-content" class="main-content">
             <article>
             <p>Get connected with the greatest minds in the industry with the latest Internet development, news, various development platform techniques, hints and tips. Prominent speakers around the world are coming all together with motivating and inspirational talks and workshops. Hundreds of developers will gather at the summit to meet, learn and exchange experiences and ideas on different development platform / environment.</p>
             <p>The main theme of the event is <strong>big data: Cloud - scale your application to million users</strong>. It will be divided into two parts: conference and workshops. The workshops will provide a two way communication platform for developers to obtain hands-on experience in small groups to learn new technique, share experience and exchange ideas.</p>
@@ -181,6 +184,20 @@
               papers and given talks in numerous data engineering and distributed systems conferences. And
               he is passionate about open-source projects being the future of big-data.
             </p>
+
+             <img src="img/speakers/britt-selvitelle.jpg" class="keynote-pic">
+            <p>
+              Britt Selvitelle<br/>
+              Early Engineer at Twitter (Founding Team)<br/>
+              Volunteer Engineer at Obama for America<br/>
+              <strong></strong>
+            </p>
+            <p>
+              Britt Selvitelle was one of the founding engineers at Twitter, where he helped scale the
+              company both technically and socially for 5 years, from 2007 to 2011. Most recently he spent
+              time working with the Obama campaign to ensure the system could handle the fast increasing
+              traffic as the election drew near.
+            </p>
             </article>
             <!--h2>Prizes</h2>
             <p>
@@ -193,7 +210,7 @@
               </ul>
             </p-->
           </div>
-          <div id="speakers-content">
+          <div id="speakers-content" class="main-content">
             <article>
               <h2>Keynote: Google Maps</h2>
               <h3>Google</h3>
@@ -241,6 +258,23 @@
                 performance tradeoffs in WAN data replication for distributed systems.  He has published
                 papers and given talks in numerous data engineering and distributed systems conferences. And
                 he is passionate about open-source projects being the future of big-data.
+              </p>
+            </article>
+
+             <article>
+              <h2>Keynote</h2>
+              <img src="img/speakers/britt-selvitelle.jpg" class="keynote-pic">
+              <p>
+                Britt Selvitelle<br/>
+                Early Engineer at Twitter (Founding Team)<br/>
+                Volunteer Engineer at Obama for America<br/>
+                <strong></strong>
+              </p>
+              <p>
+                Britt Selvitelle was one of the founding engineers at Twitter, where he helped scale the
+                company both technically and socially for 5 years, from 2007 to 2011. Most recently he spent
+                time working with the Obama campaign to ensure the system could handle the fast increasing
+                traffic as the election drew near.
               </p>
             </article>
 
@@ -305,7 +339,7 @@
               </p>
             </article>
           </div>
-          <div id="sponsors-content">
+          <div id="sponsors-content" class="main-content">
             <article>
               <h2>Sponsorship Opportunity</h2>
               <p>
@@ -378,7 +412,7 @@
               <p><i>(*Speaker’s topic and presentation content must be agreed by the program team. Sales and marketing is prohibited.)</i></p>
             </article>
           </div>
-          <div id="schedule-content">
+          <div id="schedule-content" class="main-content">
             <article>
             <p>
             Date: 27 - 28 June, 2013 (Thu - Fri)<br/><br/>
@@ -504,7 +538,7 @@
             </table-->
             </article>
           </div>
-          <div id="prereg-content">
+          <div id="prereg-content" class="main-content">
             <script type="text/javascript" src="http://isochk.pandaform.com/javascripts/embed.js"></script>
             <script type="text/javascript">EmbeddedForm({"src": "http://isochk.pandaform.com/embedded/wids2013-pre/new", "domId": "isochk_prereg", "height": "5000px", "resize": false});</script>
           </div>
@@ -516,7 +550,7 @@
             <p>Sorry the event is full and we have stopped accepting new registration.</p>
           </div> -->
         </div>
-        <aside class="span4">
+        <aside class="span3">
           <h2>Hosts</h2>
           <ul>
             <li><a href="http://isoc.hk"><img src="img/sidebar/isochk.png" alt="Internet Society Hong Kong"></a></li>
@@ -588,7 +622,7 @@
       </div> <!-- #main-container -->
     </div>
     <footer>
-      <div class="container">
+      <div class="container white-bg">
         <div class="row">
           <div class="span12">
             <div id="backtotop">Back to top</div>

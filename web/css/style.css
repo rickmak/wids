@@ -403,6 +403,8 @@ div.more-info {
   left: 50%;
   margin-left: -200px;
   margin-top: -200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 /* Support Organization */

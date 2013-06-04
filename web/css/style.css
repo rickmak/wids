@@ -398,6 +398,11 @@ div#schedule-content table li:before {
   left: -8px;
 }
 
+div#schedule-content table img.more-info {
+  width: 12px;
+  height: 12px;
+}
+
 div#body ul.prizes {
   list-style: none;
 }
@@ -412,6 +417,8 @@ div#body ul.prizes li {
 
 img.more-info {
   cursor: pointer;
+  width: 15px;
+  height: 15px;
 }
 
 div.more-info {

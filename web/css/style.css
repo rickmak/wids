@@ -224,7 +224,7 @@ nav {
 nav ul {
   margin: 0 auto;
   list-style: none inside;
-  width: 600px;
+  width: 660px;
   height: 60px;
 }
 
@@ -352,6 +352,10 @@ div#prereg iframe{
   min-height: 1000px;
 }
 
+div#speakers-content h2 {
+  font-size: 23px;
+}
+
 div#speakers-content h3 {
   color: #FF6E0B;
 }
@@ -373,6 +377,27 @@ div#sponsors-content h3 {
   margin-bottom: 1.5em;
 }
 
+div#schedule-content table th {
+  font-style: italic;
+}
+
+div#schedule-content table ul {
+  list-style: none;
+}
+div#schedule-content table li {
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  text-indent: -8px;
+}
+
+div#schedule-content table li:before {
+  content: "-";
+  position: relative;
+  left: -8px;
+}
+
 div#body ul.prizes {
   list-style: none;
 }
@@ -382,7 +407,7 @@ div#body ul.prizes li {
   float: left;
   font-size: 12px;
   line-height: 12px;
-  width: 135px;
+  width: 170px;
 }
 
 img.more-info {
@@ -403,6 +428,8 @@ div.more-info {
   left: 50%;
   margin-left: -200px;
   margin-top: -200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 /* Support Organization */

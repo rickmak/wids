@@ -224,7 +224,7 @@ nav {
 nav ul {
   margin: 0 auto;
   list-style: none inside;
-  width: 600px;
+  width: 660px;
   height: 60px;
 }
 
@@ -352,6 +352,10 @@ div#prereg iframe{
   min-height: 1000px;
 }
 
+div#speakers-content h2 {
+  font-size: 23px;
+}
+
 div#speakers-content h3 {
   color: #FF6E0B;
 }
@@ -371,6 +375,27 @@ div#speakers-content article {
 div#sponsors-content h3 {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+div#schedule-content table th {
+  font-style: italic;
+}
+
+div#schedule-content table ul {
+  list-style: none;
+}
+div#schedule-content table li {
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  text-indent: -8px;
+}
+
+div#schedule-content table li:before {
+  content: "-";
+  position: relative;
+  left: -8px;
 }
 
 div#body ul.prizes {

@@ -27,15 +27,6 @@
   <!--[if lte IE 8]><script src="ie6/warning.js"></script><script>window.onload=function(){e("ie6/")}</script><![endif]-->
 </head>
 <body>
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=239362576138301";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
   <header id="mobile">
     <img class="logo" src="img/wids-front-logo.png" alt="World Internet Developer Summit">
   </header>
@@ -48,20 +39,23 @@
           <p>Get the most up-to-date info!</p>
         </div>
         <div class="span4">
-          <a class="nav-btn" href="#prereg" id="ad-pre-reg">Register</a>
+          <a class="nav-btn" href="#reg" id="ad-pre-reg">Register</a>
         </div>
       </div>
     </div>
   </div>
 
   <div id="social-media-buttons" class="hide-at-mobile">
-            <div id="fb-btn">
-              <div class="fb-like" data-href="http://isoc.hk/wids2013" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
-            </div>
-            <div id="twitter-btn">
-              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://isoc.hk/wids2013" data-text="Check-out World Internet Developer Summit (27-28 June 2013)" data-hashtags="wids">Tweet</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
+    <div id="fb-btn">
+      <div class="fb-like" data-href="http://isoc.hk/wids2013" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+    </div>
+    <div id="twitter-btn">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://isoc.hk/wids2013" data-text="Check-out World Internet Developer Summit (27-28 June 2013)" data-hashtags="wids">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <div id="gplus-btn">
+      <div class="g-plusone" data-size="medium" data-annotation="bubble" data-href="http://isoc.hk/wids2013"></div>
+    </div>
   </div>
 
   <header id="spread">
@@ -82,7 +76,7 @@
           <p id="tagline">The <strong>most signature</strong> Cross-Platform Developer Summit in Hong Kong</p>
           <p id="date">27-28 June 2013</p>
           <p id="location">at Cyberport and Hong Kong Science Park</p>
-          <p><a class="nav-btn" id="pre-register-btn" href="#prereg">Register</a></p>
+          <p><a class="nav-btn" id="pre-register-btn" href="#reg">Register</a></p>
         </div>
       </div>
     </div>
@@ -121,8 +115,8 @@
           <li><a href="#speakers" id="speakers">Speakers</a></li>
           <li class="hide-at-mobile"><a href="#sponsors" id="sponsors">Sponsors</a></li>
           <li><a href="#schedule" id="schedule">Schedule</a></li>
-          <li><a href="#prereg" id="prereg">Registration</a></li>
-          <!--li class="hide-at-mobile"><a href="#reg" id="reg">Registration</a></li-->
+          <!--li><a href="#prereg" id="prereg">Pre-registration</a></li-->
+          <li><a href="#reg" id="reg">Registration</a></li>
         </ul>
       </div>
     </div>
@@ -229,7 +223,7 @@
             <h2>World Internet Developer Summit 2013</h2>
             <p>Date: 27-28 June 2013<br>
             Venue: 27 June at Cyberport, 28 June at Hong Kong Science Park</p>
-            <p>So don’t miss out and keep yourself in the loop with our latest development and news. <a class="nav-btn" href="#prereg">Pre-register now</a> to join the rest of developers in Hong Kong and its surrounding region for one of the most exciting and engaging event yet. Official registration will soon be launched, please <a class="nav-btn" href="#prereg">register</a> now to get the most up-to-date information about the event.</p>
+            <p>So don’t miss out and keep yourself in the loop with our latest development and news. <a class="nav-btn" href="#reg">Register now</a> to join the rest of developers in Hong Kong and its surrounding region for one of the most exciting and engaging event yet. Official registration will soon be launched, please <a class="nav-btn" href="#reg">register</a> now to get the most up-to-date information about the event.</p>
 
             <h2>Keynote Speakers</h2>
             <img src="img/speakers/ben-luk.jpg" class="keynote-pic">
@@ -321,9 +315,13 @@
 
             <h2>Prizes</h2>
             <p>
-              By simply attending the conference you will have the chance to win a Blackberry 10 device &mdash; Z10!
+              By simply attending the conference you will have the chance to win a Blackberry 10 device &mdash; <a href="http://us.blackberry.com/smartphones/blackberry-z10.html" target="_blank">Z10</a>!
               <ul class="prizes">
-                <li><img src="img/prizes/blackberry-z10.jpg"></li>
+                <li>
+                  <a href="http://us.blackberry.com/smartphones/blackberry-z10.html" target="_blank">
+                    <img src="img/prizes/blackberry-z10.jpg">
+                  </a>
+                </li>
               </ul>
             </p>
           </div>
@@ -818,21 +816,21 @@
                         Google &ndash; Make your own Maps &amp; StreetView (with Google Maps API)
                         <img class="more-info" for="#homing-workshop-info" src="img/info.png" alt="More Info" />
                       </strong><br/>
-                      Venue: <i>TBC</i>
+                      Venue: Cyberport
                     </li>
                     <li>
                       <strong>
                         Blackberry &ndash; Introduction to BlackBerry 10 App Development
                         <img class="more-info" for="#alan-workshop-info" src="img/info.png" alt="More Info" />
                       </strong><br/>
-                      Venue: <i>TBC</i>
+                      Venue: Cyberport
                     </li>
                     <li>
                       <strong>
                         Microsoft &ndash; Everything you need to know to meet Windows Azure
                         <img class="more-info" for="#danny-workshop-info" src="img/info.png" alt="More Info" />
                       </strong><br/>
-                      Venue: <i>TBC</i>
+                      Venue: Hong Kong Science Park
                     </li>
                   </ul>
                 </td>
@@ -842,19 +840,14 @@
             <p><strong>NOTE: The above agenda is subject to change and without prior notice.</strong></p>
             </article>
           </div>
-          <div id="prereg-content" class="main-content">
-              <!-- 
-              <script type="text/javascript" src="http://isochk.pandaform.com/javascripts/embed.js"></script>
-              <script type="text/javascript">EmbeddedForm({"src": "http://isochk.pandaform.com/embedded/wids2013-pre/new", "domId": "isochk_prereg", "height": "5000px", "resize": false});</script>
-              -->
-              <script type="text/javascript" src="http://isochk.pandaform.com/javascripts/embed.js"></script>
-              <script type="text/javascript">EmbeddedForm({"src": "http://isochk.pandaform.com/embedded/wids2013/new", "domId": "isochk_wids2013", "height": "8192px"});</script>
-
-          </div>
-          <!-- <div id="reg-content">
+          <!-- <div id="prereg-content" class="main-content">
             <script type="text/javascript" src="http://isochk.pandaform.com/javascripts/embed.js"></script>
-            <script type="text/javascript">EmbeddedForm({"src": "http://isochk.pandaform.com/embedded/ulmuwr/new", "domId": "isochk_ulmuwr", "height": "5000px", "resize": false});</script>
+            <script type="text/javascript">EmbeddedForm({"src": "http://isochk.pandaform.com/embedded/wids2013-pre/new", "domId": "isochk_prereg", "height": "5000px", "resize": false});</script>
           </div> -->
+          <div id="reg-content">
+            <script type="text/javascript" src="http://isochk.pandaform.com/javascripts/embed.js"></script>
+            <script type="text/javascript">EmbeddedForm({"src": "http://isochk.pandaform.com/embedded/wids2013/new", "domId": "isochk_wids2013", "height": "5000px", "resize": false});</script>
+          </div>
           <!-- <div id="reg-content">
             <p>Sorry the event is full and we have stopped accepting new registration.</p>
           </div> -->
@@ -955,6 +948,22 @@
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 <script src="js/script.js"></script>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=239362576138301";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 
 <!-- <script>
 	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID

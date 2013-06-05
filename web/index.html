@@ -27,15 +27,6 @@
   <!--[if lte IE 8]><script src="ie6/warning.js"></script><script>window.onload=function(){e("ie6/")}</script><![endif]-->
 </head>
 <body>
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=239362576138301";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
   <header id="mobile">
     <img class="logo" src="img/wids-front-logo.png" alt="World Internet Developer Summit">
   </header>
@@ -55,13 +46,13 @@
   </div>
 
   <div id="social-media-buttons" class="hide-at-mobile">
-            <div id="fb-btn">
-              <div class="fb-like" data-href="http://isoc.hk/wids2013" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
-            </div>
-            <div id="twitter-btn">
-              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://isoc.hk/wids2013" data-text="Check-out World Internet Developer Summit (27-28 June 2013)" data-hashtags="wids">Tweet</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
+    <div id="fb-btn">
+      <div class="fb-like" data-href="http://isoc.hk/wids2013" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+    </div>
+    <div id="twitter-btn">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://isoc.hk/wids2013" data-text="Check-out World Internet Developer Summit (27-28 June 2013)" data-hashtags="wids">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
   </div>
 
   <header id="spread">
@@ -954,6 +945,14 @@
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 <script src="js/script.js"></script>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=239362576138301";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- <script>
 	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID

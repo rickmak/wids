@@ -392,6 +392,15 @@ div#schedule-content table li {
   text-indent: -8px;
 }
 
+div#schedule-content table thead tr{
+  background-color: #EFEFEF;
+  text-align:left;
+}
+
+div#schedule-content table thead th{
+  vertical-align:top;
+}
+
 div#schedule-content table li:before {
   content: "-";
   position: relative;
